@@ -11,21 +11,21 @@
             display: grid;
             grid-template-columns: 30% auto 30%;
             grid-template-areas:
-                "hed hed nav"
-                "asi art art"
-                "asi set set"
-                "foo foo foo";
+                'hed hed nav'
+                'asi art art'
+                'asi set set'
+                'foo fo f';
             grid-gap: 10px;
         }
 
         header {
-            padding: 4%;
+            padding: 5%;
             background-color: rgb(251, 60, 54);
             grid-area: hed;
         }
 
         nav {
-            padding: 4%;
+            padding: 5%;
             background-color: rgb(251, 60, 54);
             grid-area: nav;
         }
@@ -49,9 +49,19 @@
         }
 
         footer {
-            padding: 4%;
+            padding: 10%;
             background-color: #00728f;
             grid-area: foo;
+        }
+        article {
+            padding: 10%;
+            background-color: #00728f;
+            grid-area: fo;
+        }
+        div {
+            padding: 10%;
+            background-color: #00728f;
+            grid-area: f;
         }
     </style>
 </head>
@@ -63,6 +73,8 @@
     <main></main>
     <section></section>
     <footer></footer>
+    <article></article>
+    <div></div>
 </body>
 
 </html>
