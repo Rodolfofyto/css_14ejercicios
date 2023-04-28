@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio_2</title>
+    <style>
+        body {
+            display: grid;
+            grid-template-columns: 30% auto 30%;
+            grid-template-areas:
+                "hed hed nav"
+                "asi art art"
+                "asi set set"
+                "foo foo foo";
+            grid-gap: 5px;
+        }
+
+        header {
+            padding: 4%;
+            background-color: rgb(251, 60, 54);
+            grid-area: hed;
+        }
+
+        nav {
+            padding: 4%;
+            background-color: rgb(251, 60, 54);
+            grid-area: nav;
+        }
+
+        aside {
+            padding: 10%;
+            background-color: #ecbf0f;
+            grid-area: asi;
+        }
+
+        main {
+            padding: 10%;
+            background-color: #8e045b;
+            grid-area: art;
+        }
+
+        section {
+            padding: 10%;
+            background-color: #8e045b;
+            grid-area: set;
+        }
+
+        footer {
+            padding: 4%;
+            background-color: #00728f;
+            grid-area: foo;
+        }
+    </style>
+</head>
+
+<body>
+    <header></header>
+    <nav></nav>
+    <aside></aside>
+    <main></main>
+    <section></section>
+    <footer></footer>
+</body>
+
+</html>
