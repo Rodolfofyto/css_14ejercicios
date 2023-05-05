@@ -152,21 +152,22 @@ section:last-of-type>table {
     color: #333;
     font-family: Arial, sans-serif;
     font-size: 0.9em;
-  }
-  
-  th, td {
+}
+
+th,
+td {
     padding: 8px;
     vertical-align: middle;
-  }
-  
-  th {
+}
+
+th {
     background-color: #1d1d1d;
     color: #ffffff;
-  }
-  
-  tr:nth-of-type(odd) {
+}
+
+tr:nth-of-type(odd) {
     background-color: #e3e3e3;
-  }
+}
 
 /* FOOTER */
 
@@ -177,8 +178,35 @@ footer {
     background-size: cover;
 }
 
-footer>p{
+footer>p {
     text-align: end;
     color: #ffffff;
     font-size: 1.2em;
+}
+
+/* CUANDO EL ANCHO SEA INFERIOR A 700PX */
+@media screen and (max-width:700px) {
+
+
+    body {
+        display: grid;
+        grid-template-columns: auto auto 13% 13% 13% 13% 13%;
+        grid-template-areas:
+            'hed hed hed hed hed hed hed'
+            'nav nav nav nav nav nav nav'
+            'asi asi tab tab tab tab tab'
+            'asi asi art art art art art'
+            'set set set set set set set'
+            'ma ma ma ma ma ma ma'
+            'foo foo foo foo foo foo foo'
+        ;
+        grid-gap: 5px;
+        margin: 0;
+        padding: 2%;
+        background-color: rgb(255, 255, 255, 0.8);
+        box-shadow: none;
+        width: 95%;
+        border-radius: none;
+    }
+
 }
